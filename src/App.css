@@ -1,33 +1,201 @@
-.App {
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: helvetica, arial, san-serif;
+  padding: 0;
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  flex-basis: 100%;
+  height: 60px;
+  border-bottom: 1px solid #000;
+  position: relative;
+}
+
+nav h1 {
+  flex-basis: 70%;
+  padding: 8px;
+  margin: 0;
+}
+
+nav li a {
+  width: 109px;
+  height: 58.5px;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+  margin: 0;
+}
+
+.homebutton {
+  max-width: 88px;
+}
+
+.active {
+  background: lightgrey;
+  border: 2px solid #000;
+}
+
+nav ul {
+  width: 100%;
+  padding: 0;
+  display: flex;
+  flex-basis: 30%;
+  justify-content: flex-end;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+footer {
+  height: 60px;
+  display: flex;
+  flex-basis: 100%;
+  flex-wrap: wrap;
+  border-top: 2px solid #000;
+}
+
+footer p {
+  flex-basis: 30%;
+}
+
+footer ul {
+  display: flex;
+  flex-basis: 50%;
+  margin: 0 auto;
+}
+
+footer li {
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+.container {
+  display: flex;
+  flex-basis: 40%;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.post {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-basis: 60%;
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+
+.post-header {
+  display: inherit;
+  height: 30px;
+  flex-basis: 79%;
+  border: 1px solid #000;
+}
+
+.post-header h2 {
+  flex-basis: 80%;
+  margin: 0;
+  padding-left: 2px;
+}
+
+.post-header time {
+  padding: 5px;
+  flex-basis: 20%;
+}
+
+figure {
+  margin: 0;
+}
+
+.instapic {
+  width: 565px;
+}
+
+.userinfo {
+  display: flex;
+  height: 200px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+  flex-basis: 50%;
+  justify-content: center;
+}
+
+.profilepic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 1px solid #000;
+  margin-right: 20px;
+}
+
+.profile-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.username {
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.numbers ul {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-.App-link {
-  color: #61dafb;
+.numbers li + li {
+  margin-left: 30px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.numbers li {
+  display: block;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+}
+
+img {
+  margin: 0;
+  padding: 0;
+  max-width: 600px;
+}
+
+.profile-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.post-grid {
+  display: flex;
+  flex-basis: 90%;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.grid {
+  display: flex;
+  margin: 5px 5px 5px 5px;
+  height: 290px;
+  width: 290px;
+  flex-grow: 1;
+}
+
+@media (min-width: 767px) {
 }
