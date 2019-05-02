@@ -222,7 +222,7 @@ img {
   margin-bottom: 20px;
 }
 
-@media (min-width: 300px) {
+@media (max-width: 420px) {
   .post img {
     max-width: 300px;
   }
