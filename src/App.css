@@ -257,39 +257,3 @@ img {
     flex-basis: 50%;
   }
 }
-
-@media (min-width: 767px) {
-  .post-img {
-    max-width: 600px;
-  }
-
-  .post-header {
-    max-width: 600px;
-  }
-
-  .post-header time {
-    flex-basis: 40%;
-  }
-
-  footer {
-    font-size: 10px;
-  }
-
-  footer p {
-    flex-basis: 40%;
-    margin-left: 5px;
-  }
-
-  .userinfo {
-    flex-basis: 100%;
-    min-height: 280px;
-  }
-
-  .profilepic figure {
-    max-width: 50px;
-  }
-
-  .profile-container {
-    flex-basis: 50%;
-  }
-}
