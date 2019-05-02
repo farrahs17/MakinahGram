@@ -119,15 +119,11 @@ figure {
   margin: 0;
 }
 
-.instapic {
-  width: 565px;
-}
-
 .userinfo {
   display: flex;
   height: 200px;
   margin-top: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   flex-wrap: wrap;
   flex-basis: 50%;
   justify-content: center;
@@ -179,23 +175,121 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  max-width: 900px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 .post-grid {
   display: flex;
-  flex-basis: 90%;
+  flex-basis: 100%;
   flex-wrap: wrap;
-  justify-content: space-around;
+}
+
+.close {
+  position: relative;
+}
+.closebtn {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 .grid {
   display: flex;
-  margin: 5px 5px 5px 5px;
   height: 290px;
-  width: 290px;
+  width: 300px;
+  margin-bottom: 20px;
   flex-grow: 1;
 }
 
+.post-hidden {
+  display: none;
+  transition: all 0.3s;
+}
+
+.addpost {
+  display: flex;
+}
+
+.form {
+  margin: 0 auto;
+  border: 1px solid black;
+  padding: 10px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+}
+
+.form-margin {
+  margin-bottom: 20px;
+}
+
+@media (min-width: 300px) {
+  .post img {
+    max-width: 300px;
+  }
+
+  .post-header {
+    width: 400px;
+  }
+
+  .post-header time {
+    flex-basis: 80%;
+  }
+
+  footer {
+    font-size: 10px;
+  }
+
+  footer p {
+    flex-basis: 40%;
+    margin-left: 5px;
+  }
+
+  .userinfo {
+    flex-basis: 100%;
+    min-height: 280px;
+  }
+
+  .profilepic figure {
+    max-width: 50px;
+  }
+
+  .profile-container {
+    flex-basis: 50%;
+  }
+}
+
 @media (min-width: 767px) {
+  .post-img {
+    max-width: 600px;
+  }
+
+  .post-header {
+    max-width: 600px;
+  }
+
+  .post-header time {
+    flex-basis: 40%;
+  }
+
+  footer {
+    font-size: 10px;
+  }
+
+  footer p {
+    flex-basis: 40%;
+    margin-left: 5px;
+  }
+
+  .userinfo {
+    flex-basis: 100%;
+    min-height: 280px;
+  }
+
+  .profilepic figure {
+    max-width: 50px;
+  }
+
+  .profile-container {
+    flex-basis: 50%;
+  }
 }

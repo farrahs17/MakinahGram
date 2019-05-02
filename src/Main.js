@@ -1,17 +1,16 @@
 import React from "react";
-import ReactDOM from "react-dom";
 import { Switch, Route } from "react-router-dom";
-import PostsList from "./postsList.js";
-import Users from "./users.js";
-import MyAccount from "./MyAccount";
+import Homepage from "./homepage/Homepage.js";
+import User from "./user/User.js";
+import MyAccount from "./myaccount/MyAccount.js";
 
 function Main() {
   return (
     <main>
       <Switch>
-        <Route exact path="/" component={PostsList} />
+        <Route exact path="/" component={Homepage} />
         <Route exact path="/users/2" component={MyAccount} />
-        <Route path="/users/:id" component={Users} />
+        <Route path="/users/:id" component={User} />
       </Switch>
     </main>
   );

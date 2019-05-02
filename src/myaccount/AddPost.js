@@ -7,7 +7,6 @@ class AddPost extends React.Component {
   };
 
   handleSubmit = e => {
-    e.preventDefault();
     axios.post("https://makinahgram-api.herokuapp.com/posts", {
       user_id: 2,
       image: this.state.value
@@ -23,15 +22,18 @@ class AddPost extends React.Component {
 
   render() {
     return (
-      <div>
-        <form>
-          <label>
-            Image url:
-            <input type="text" name="image" onChange={this.handleChange} />
-          </label>
-          <button onClick={this.handleSubmit} type="submit" value="submit">
-            Add Post
-          </button>
+      <div className="addpost">
+        <form className="form">
+          <h1>Add a post</h1>
+          <div className="form-margin">
+            <label>
+              Image url:
+              <input type="text" name="image" onChange={this.handleChange} />
+            </label>
+            <button onClick={this.handleSubmit} type="submit" value="submit">
+              Add Post
+            </button>
+          </div>
         </form>
       </div>
     );
